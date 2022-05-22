@@ -4,6 +4,12 @@ const MongoStore = require('connect-mongo');
  
 const mongoose = require('mongoose');
 
+/**
+ * 
+ * Here you created the session and export it, but it is never imported/required
+ * So the session is actually never created 
+ */
+
 module.exports = app => {
   
   app.set('trust proxy', 1);
