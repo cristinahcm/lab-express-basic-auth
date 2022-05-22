@@ -36,4 +36,11 @@ module.exports = (app) => {
 
   // Handles access to the favicon
   app.use(favicon(path.join(__dirname, "..", "public", "images", "favicon.ico")));
+
+  /**
+   * Here you could add a require for the session.config
+   * require('./session.config')
+   * This way you session will be created.
+   */
+
 };
